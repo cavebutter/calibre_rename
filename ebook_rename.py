@@ -7,7 +7,7 @@
 import os
 import re
 
-ebook_dir = r'C:\Users\cohenja\Documents\Python Scripts\ml\samples'
+ebook_dir = 'ENTER YOUR PATH HERE'
 
 # Set working directory
 os.chdir(ebook_dir)
