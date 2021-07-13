@@ -22,14 +22,13 @@ if __name__ == "__main__":
     my_path = 'ENTER THE PATH FOR YOUR TEST DIRECTORY HERE'
     os.mkdir(my_path)
     os.chdir(my_path)
-    dir_base = my_path
     j = random.randint(3, 6)
     used_names = []
     for directory in range(j):
         author = random.choice(authors)
         if author not in used_names:
             used_names.append(author)
-            author_dir = os.path.join(dir_base, author)
+            author_dir = os.path.join(my_path, author)
             os.mkdir(author_dir)
             os.chdir(author_dir)
             i = 0
